@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+option csharp_namespace = "DotawinGRPC.DataServer";
+package updater;
+
+// The greeting service definition.
+service Updater {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc SaveDotaUpdateToDb(DotaUpdate) returns (UpdateResult);
+  rpc GetLatestPatch(PatchRequest) returns (PatchInfo);
+}
+
+message DotaHero {
+	uint32 gameId        = 1;
+	string name          = 2;
+	string localizedName = 3;
+}
+
+message DotaItem {
+	uint32 gameId        = 1;
+	string name          = 2;
+	string localizedName = 3;
+	uint32 cost          = 4;
+}
+
+message DotaUpdate {
+	string version           = 1;
+	repeated DotaHero heroes = 2;
+	repeated DotaItem items  = 3;
+}
+
+message PatchRequest {}
+
+message PatchInfo {
+	string version = 1;
+	string date    = 2;
+}
+
+message UpdateResult {
+	bool success   = 1;
+	PatchInfo patchInfo = 2;
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
