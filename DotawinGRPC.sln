@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotawinGRPC.DataServer", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotawinGRPC.Updater", "DotawinGRPC.Updater\DotawinGRPC.Updater.csproj", "{38C1DCFA-8D83-45FA-AE61-E173075D78A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotawinGRPC.Transformer", "DotawinGRPC.Transformer\DotawinGRPC.Transformer.csproj", "{FA1F15A7-7C27-4539-8E1F-CE54E7F916C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{38C1DCFA-8D83-45FA-AE61-E173075D78A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38C1DCFA-8D83-45FA-AE61-E173075D78A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38C1DCFA-8D83-45FA-AE61-E173075D78A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1F15A7-7C27-4539-8E1F-CE54E7F916C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1F15A7-7C27-4539-8E1F-CE54E7F916C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1F15A7-7C27-4539-8E1F-CE54E7F916C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1F15A7-7C27-4539-8E1F-CE54E7F916C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
